@@ -14,7 +14,7 @@ function Dashboard() {
       return;
     }
 
-    axios.get("http://localhost:5000/api/dashboard",{
+    axios.get("https://web-applications-backend.onrender.com/api/dashboard",{
       headers:{ Authorization:"Bearer "+token }
     })
     .then(res=>setName(res.data.name))
