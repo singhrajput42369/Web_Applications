@@ -9,7 +9,7 @@ function Home() {
 
     const sendMessage = async () => {
         try {
-            await axios.post("http://localhost:5000/api/contact", {
+            await axios.post("https://web-applications-backend.onrender.com/api/contact", {
                 name,
                 email,
                 message
